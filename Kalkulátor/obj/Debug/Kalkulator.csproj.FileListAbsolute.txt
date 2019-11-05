@@ -1,0 +1,9 @@
+C:\Users\Sanyi\source\repos\Kalkulator\Kalkulátor\obj\Debug\Kalkulator.csprojAssemblyReference.cache
+C:\Users\Sanyi\source\repos\Kalkulator\Kalkulátor\obj\Debug\Kalkulátor.Form_Kalkulator.resources
+C:\Users\Sanyi\source\repos\Kalkulator\Kalkulátor\obj\Debug\Kalkulátor.Properties.Resources.resources
+C:\Users\Sanyi\source\repos\Kalkulator\Kalkulátor\obj\Debug\Kalkulator.csproj.GenerateResource.cache
+C:\Users\Sanyi\source\repos\Kalkulator\Kalkulátor\obj\Debug\Kalkulátor.exe
+C:\Users\Sanyi\source\repos\Kalkulator\Kalkulátor\obj\Debug\Kalkulátor.pdb
+C:\Users\Sanyi\source\repos\Kalkulator\Kalkulátor\bin\Debug\Kalkulátor.exe.config
+C:\Users\Sanyi\source\repos\Kalkulator\Kalkulátor\bin\Debug\Kalkulátor.exe
+C:\Users\Sanyi\source\repos\Kalkulator\Kalkulátor\bin\Debug\Kalkulátor.pdb

@@ -1,0 +1,9 @@
+D:\Petrik\Gyakorlas\C#\Kalkulátor\Kalkulátor\bin\Debug\Kalkulátor.exe.config
+D:\Petrik\Gyakorlas\C#\Kalkulátor\Kalkulátor\bin\Debug\Kalkulátor.exe
+D:\Petrik\Gyakorlas\C#\Kalkulátor\Kalkulátor\bin\Debug\Kalkulátor.pdb
+D:\Petrik\Gyakorlas\C#\Kalkulátor\Kalkulátor\obj\Debug\Kalkulátor.csprojResolveAssemblyReference.cache
+D:\Petrik\Gyakorlas\C#\Kalkulátor\Kalkulátor\obj\Debug\Kalkulátor.Form1.resources
+D:\Petrik\Gyakorlas\C#\Kalkulátor\Kalkulátor\obj\Debug\Kalkulátor.Properties.Resources.resources
+D:\Petrik\Gyakorlas\C#\Kalkulátor\Kalkulátor\obj\Debug\Kalkulátor.csproj.GenerateResource.Cache
+D:\Petrik\Gyakorlas\C#\Kalkulátor\Kalkulátor\obj\Debug\Kalkulátor.exe
+D:\Petrik\Gyakorlas\C#\Kalkulátor\Kalkulátor\obj\Debug\Kalkulátor.pdb
