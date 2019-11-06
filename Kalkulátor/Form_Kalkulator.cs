@@ -19,48 +19,61 @@ namespace Kalkulátor
 
         private void button_AC_Click(object sender, EventArgs e)
         {
-            muvelet.Text = "0";
+            kijelzo.Text = "0";
         }
 
-        private void button12_Click(object sender, EventArgs e)
+        private void Szamjegyek_Click(object sender, EventArgs e)
         {
-            Button B = sender as Button;
+            Button Gomb = sender as Button;
 
-            if (muvelet.Text.Equals("0") && "0123456789(".Contains(B.Tag.ToString()))
+            if ("+-*/".Contains(kijelzo.Text.Substring(kijelzo.Text.Length - 1, 1)) && "+-*/".Contains(Gomb.Tag.ToString()))
             {
-                muvelet.Text = "";
+                //-- Ha a kijelzőn az utolsó karakter műveleti jel és újra műveleti jelet használ, akkor nem rögzítjük
+                return;
             }
-
-            muvelet.Text += B.Tag;
+            if (kijelzo.Text.Equals("0") && "0123456789(/*-".Contains(Gomb.Tag.ToString()))
+            {
+                //-- Ha kijelzőn CSAK a nulla számjegy szerepel, akkor eltüntetjük. Ne kezdődjön nullával!
+                kijelzo.Text = "";
+            }
+            kijelzo.Text += Gomb.Tag;
         }
 
         private void button_Egyenlo_Click(object sender, EventArgs e)
         {
-            double eredmeny = Convert.ToDouble(new DataTable().Compute(muvelet.Text, null));
-            muvelet.Text =  eredmeny.ToString().Replace(",",".");
+            try
+            {
+                double eredmeny = Convert.ToDouble(new DataTable().Compute(kijelzo.Text, null));
+                kijelzo.Text = eredmeny.ToString().Replace(",", ".");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Hibás képlet!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+           
         }
 
-        private void button18_Click(object sender, EventArgs e)
+        private void button_Elojelvalto_Click(object sender, EventArgs e)
         {
-            if (muvelet.Text.Substring(0,1) == "-")
+            if (kijelzo.Text.Substring(0,1) == "-")
             {
-                muvelet.Text = muvelet.Text.Remove(0, 1);
+                kijelzo.Text = kijelzo.Text.Remove(0, 1);
             }
             else
             {
-                muvelet.Text = "-" + muvelet.Text;
+                kijelzo.Text = "-" + kijelzo.Text;
             }                
         }
 
         private void button_DEL_Click(object sender, EventArgs e)
         {
-            if (muvelet.Text.Length == 1)
+            if (kijelzo.Text.Length == 1)
             {
-                muvelet.Text = "0";
+                kijelzo.Text = "0";
             }
             else
             {
-                muvelet.Text = muvelet.Text.Remove(muvelet.Text.Length-1, 1);
+                kijelzo.Text = kijelzo.Text.Remove(kijelzo.Text.Length-1, 1);
             }
         }
     }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Kalkulator));
-            this.muvelet = new System.Windows.Forms.Label();
+            this.kijelzo = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -55,14 +55,14 @@
             // 
             // muvelet
             // 
-            this.muvelet.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.muvelet.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.muvelet.Location = new System.Drawing.Point(33, 27);
-            this.muvelet.Name = "muvelet";
-            this.muvelet.Size = new System.Drawing.Size(249, 40);
-            this.muvelet.TabIndex = 0;
-            this.muvelet.Text = "0";
-            this.muvelet.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.kijelzo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.kijelzo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.kijelzo.Location = new System.Drawing.Point(33, 27);
+            this.kijelzo.Name = "muvelet";
+            this.kijelzo.Size = new System.Drawing.Size(249, 40);
+            this.kijelzo.TabIndex = 0;
+            this.kijelzo.Text = "0";
+            this.kijelzo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // button1
             // 
@@ -74,7 +74,7 @@
             this.button1.Tag = "7";
             this.button1.Text = "7";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button12_Click);
+            this.button1.Click += new System.EventHandler(this.Szamjegyek_Click);
             // 
             // button2
             // 
@@ -86,7 +86,7 @@
             this.button2.Tag = "8";
             this.button2.Text = "8";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button12_Click);
+            this.button2.Click += new System.EventHandler(this.Szamjegyek_Click);
             // 
             // button3
             // 
@@ -98,7 +98,7 @@
             this.button3.Tag = "9";
             this.button3.Text = "9";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button12_Click);
+            this.button3.Click += new System.EventHandler(this.Szamjegyek_Click);
             // 
             // button4
             // 
@@ -110,7 +110,7 @@
             this.button4.Tag = "6";
             this.button4.Text = "6";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button12_Click);
+            this.button4.Click += new System.EventHandler(this.Szamjegyek_Click);
             // 
             // button5
             // 
@@ -122,7 +122,7 @@
             this.button5.Tag = "5";
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button12_Click);
+            this.button5.Click += new System.EventHandler(this.Szamjegyek_Click);
             // 
             // button6
             // 
@@ -134,7 +134,7 @@
             this.button6.Tag = "4";
             this.button6.Text = "4";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button12_Click);
+            this.button6.Click += new System.EventHandler(this.Szamjegyek_Click);
             // 
             // button7
             // 
@@ -146,7 +146,7 @@
             this.button7.Tag = "3";
             this.button7.Text = "3";
             this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button12_Click);
+            this.button7.Click += new System.EventHandler(this.Szamjegyek_Click);
             // 
             // button8
             // 
@@ -158,7 +158,7 @@
             this.button8.Tag = "2";
             this.button8.Text = "2";
             this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button12_Click);
+            this.button8.Click += new System.EventHandler(this.Szamjegyek_Click);
             // 
             // button9
             // 
@@ -170,7 +170,7 @@
             this.button9.Tag = "1";
             this.button9.Text = "1";
             this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button12_Click);
+            this.button9.Click += new System.EventHandler(this.Szamjegyek_Click);
             // 
             // button10
             // 
@@ -194,7 +194,7 @@
             this.button11.Tag = ".";
             this.button11.Text = ".";
             this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button12_Click);
+            this.button11.Click += new System.EventHandler(this.Szamjegyek_Click);
             // 
             // button12
             // 
@@ -206,7 +206,7 @@
             this.button12.Tag = "0";
             this.button12.Text = "0";
             this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.button12.Click += new System.EventHandler(this.Szamjegyek_Click);
             // 
             // button13
             // 
@@ -219,7 +219,7 @@
             this.button13.Tag = "-";
             this.button13.Text = "-";
             this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.button12_Click);
+            this.button13.Click += new System.EventHandler(this.Szamjegyek_Click);
             // 
             // button14
             // 
@@ -232,7 +232,7 @@
             this.button14.Tag = "+";
             this.button14.Text = "+";
             this.button14.UseVisualStyleBackColor = false;
-            this.button14.Click += new System.EventHandler(this.button12_Click);
+            this.button14.Click += new System.EventHandler(this.Szamjegyek_Click);
             // 
             // button15
             // 
@@ -245,7 +245,7 @@
             this.button15.Tag = "/";
             this.button15.Text = "÷";
             this.button15.UseVisualStyleBackColor = false;
-            this.button15.Click += new System.EventHandler(this.button12_Click);
+            this.button15.Click += new System.EventHandler(this.Szamjegyek_Click);
             // 
             // button16
             // 
@@ -258,7 +258,7 @@
             this.button16.Tag = "*";
             this.button16.Text = "*";
             this.button16.UseVisualStyleBackColor = false;
-            this.button16.Click += new System.EventHandler(this.button12_Click);
+            this.button16.Click += new System.EventHandler(this.Szamjegyek_Click);
             // 
             // button17
             // 
@@ -283,7 +283,7 @@
             this.button18.Tag = "";
             this.button18.Text = "+/-";
             this.button18.UseVisualStyleBackColor = false;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
+            this.button18.Click += new System.EventHandler(this.button_Elojelvalto_Click);
             // 
             // button19
             // 
@@ -296,7 +296,7 @@
             this.button19.Tag = ")";
             this.button19.Text = ")";
             this.button19.UseVisualStyleBackColor = false;
-            this.button19.Click += new System.EventHandler(this.button12_Click);
+            this.button19.Click += new System.EventHandler(this.Szamjegyek_Click);
             // 
             // button20
             // 
@@ -309,7 +309,7 @@
             this.button20.Tag = "(";
             this.button20.Text = "(";
             this.button20.UseVisualStyleBackColor = false;
-            this.button20.Click += new System.EventHandler(this.button12_Click);
+            this.button20.Click += new System.EventHandler(this.Szamjegyek_Click);
             // 
             // button21
             // 
@@ -349,7 +349,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.muvelet);
+            this.Controls.Add(this.kijelzo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_Kalkulator";
             this.Text = "Számológép";
@@ -359,7 +359,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label muvelet;
+        private System.Windows.Forms.Label kijelzo;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
