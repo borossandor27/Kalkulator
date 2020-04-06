@@ -7,3 +7,4 @@ C:\Users\Sanyi\source\repos\Kalkulator\Kalkulátor\obj\Debug\Kalkulátor.pdb
 C:\Users\Sanyi\source\repos\Kalkulator\Kalkulátor\bin\Debug\Kalkulátor.exe.config
 C:\Users\Sanyi\source\repos\Kalkulator\Kalkulátor\bin\Debug\Kalkulátor.exe
 C:\Users\Sanyi\source\repos\Kalkulator\Kalkulátor\bin\Debug\Kalkulátor.pdb
+C:\Users\Sanyi\source\repos\Kalkulator\Kalkulátor\obj\Debug\Kalkulator.csproj.CoreCompileInputs.cache
